@@ -1,17 +1,20 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "jquery": true
+    env: {
+        browser: true,
+        es6: true,
+        es2017: true,
+        es2020: true,
+        es2021: true,
+        jquery: true
     },
-    "plugins": [
+    plugins: [
         "flowtype",
         "new-with-error",
         "no-secrets",
         "simple-import-sort",
         "switch-case"
     ],
-    "extends": [
+    extends: [
         "eslint:recommended",
         "airbnb-base",
         "@open-wc/eslint-config",
@@ -26,16 +29,16 @@ module.exports = {
         "plugin:unicorn/recommended",
         "plugin:you-dont-need-lodash-underscore/compatible"
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    globals: {
+        m: "readonly"
     },
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-        "ecmaVersion": 2021,
-        "sourceType": "module"
+    parserOptions: {
+        sourceType: "module",
+        ecmaFeatures: {
+            jsx: true
+        }
     },
-    "rules": {
+    rules: {
         "comma-dangle": [
             "error",
             "never"
@@ -58,8 +61,8 @@ module.exports = {
         "i18n-text/no-en": "off",
         "import/extensions": ["error",
             {
-                "js": "never",
-                "png": "always"
+                js: "never",
+                png: "always"
             }
         ], // Allow imports to modules without extension
         "import/no-unresolved": "off", // This rule doesn't work with relative imports
