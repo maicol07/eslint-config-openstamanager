@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-openstamanager",
+  "name": "@openstamanager/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
   "peerDependencies": {
