@@ -17,7 +17,7 @@ module.exports = {
     extends: [
         "eslint:recommended",
         "airbnb-base",
-        "@open-wc/eslint-config",
+        "@open-wc",
         "plugin:flowtype/recommended",
         "plugin:github/recommended",
         "plugin:import/recommended",
