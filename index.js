@@ -8,7 +8,6 @@ module.exports = {
         jquery: true
     },
     plugins: [
-        "flowtype",
         "new-with-error",
         "no-secrets",
         "simple-import-sort",
@@ -18,7 +17,8 @@ module.exports = {
         "eslint:recommended",
         "airbnb-base",
         "@open-wc",
-        "plugin:flowtype/recommended",
+        "xo-space",
+        "xo-flow",
         "plugin:github/recommended",
         "plugin:import/recommended",
         "plugin:mithril/recommended",
@@ -31,13 +31,6 @@ module.exports = {
     ],
     globals: {
         m: "readonly"
-    },
-    parser: "@babel/eslint-parser",
-    parserOptions: {
-        sourceType: "module",
-        ecmaFeatures: {
-            jsx: true
-        }
     },
     rules: {
         "comma-dangle": [
