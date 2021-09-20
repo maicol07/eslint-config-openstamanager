@@ -32,6 +32,7 @@ module.exports = {
     globals: {
         m: "readonly"
     },
+    parser: "@babel/eslint-parser",
     parserOptions: {
         sourceType: "module",
         ecmaFeatures: {
