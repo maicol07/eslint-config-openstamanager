@@ -43,7 +43,7 @@ module.exports = {
         "no-invalid-this": "off",
         "no-multiple-empty-lines": "off",
         "no-restricted-syntax": "off",
-        "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+        "no-unused-vars": ["error", {"vars": "all", "args": "none", "ignoreRestSiblings": false}],
         "object-curly-spacing": "off",
         "sort-imports": "off", // See simple-import-sort plugin
 
@@ -51,6 +51,7 @@ module.exports = {
         //"custom-elements/extends-correct-class": "off", // Conflicts when extending other Web Components
         "filenames/match-regex": "off",
         "flowtype/no-types-missing-file-annotation": "off",
+        "flowtype/required-valid-file-annotation": "off",
         "github/array-foreach": "off", // Already handled (better) by unicorn/no-array-for-each
         "i18n-text/no-en": "off",
         "import/extensions": ["error",
