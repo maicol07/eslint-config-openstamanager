@@ -7,7 +7,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": ">= 3",
     "eslint-config-airbnb-base": ">=14.2.1",
-    "eslint-config-xo": ">=0.38.0",
+    "eslint-config-xo-space": ">=0.29.0",
     "eslint-config-xo-flow": ">=0.2.0",
     "eslint-plugin-flowtype": ">=5.9.2",
     "eslint-plugin-github": ">=4.2.0",
