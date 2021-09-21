@@ -51,7 +51,7 @@ module.exports = {
         //"custom-elements/extends-correct-class": "off", // Conflicts when extending other Web Components
         "filenames/match-regex": "off",
         "flowtype/no-types-missing-file-annotation": "off",
-        "flowtype/required-valid-file-annotation": "off",
+        "flowtype/require-valid-file-annotation": "off",
         "github/array-foreach": "off", // Already handled (better) by unicorn/no-array-for-each
         "i18n-text/no-en": "off",
         "import/extensions": ["error",
