@@ -67,7 +67,7 @@ module.exports = {
             {
                 "excludeArrowFunctions": true
             }
-        ]
+        ],
         "github/array-foreach": "off", // Already handled (better) by unicorn/no-array-for-each
         "i18n-text/no-en": "off",
         "import/extensions": ["error",
