@@ -33,6 +33,14 @@ module.exports = {
         m: "readonly"
     },
     rules: {
+        "capitalized-comments": [
+            "error",
+            "always",
+            {
+                "ignorePattern": "pragma|ignored|noinspection",
+                "ignoreInlineComments": true
+            }
+        ],
         "comma-dangle": [
             "error",
             "never"
