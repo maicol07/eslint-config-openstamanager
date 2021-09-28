@@ -4,7 +4,7 @@
   "main": "index.js",
   "peerDependencies": {
     "@adeira/eslint-config": ">=6.5.1",
-    "@babel/parser": ">=7.15.7",
+    "@babel/eslint-parser": ">=7.15.7",
     "@open-wc/eslint-config": ">=4.3.0",
     "eslint": ">= 3",
     "eslint-config-airbnb-base": ">=14.2.1",
