@@ -7,6 +7,14 @@ module.exports = {
         es2021: true,
         jquery: true
     },
+    parser: '@babel/eslint-parser', // TODO: consider moving this into `eslint-config-adeira`
+    parserOptions: {
+        sourceType: 'module',
+        ecmaVersion: 2021,
+        ecmaFeatures: {
+            jsx: true,
+        },
+    },
     plugins: [
         "new-with-error",
         "no-secrets",
@@ -16,13 +24,11 @@ module.exports = {
     extends: [
         "eslint:recommended",
         "airbnb-base",
+        "@aidera/eslint-config/base",
+        "@aidera/eslint-config/flowtype",
         "@open-wc",
-        "xo-space",
-        "xo-flow",
         "plugin:github/recommended",
-        "plugin:import/recommended",
         "plugin:mithril/recommended",
-        "plugin:promise/recommended",
         "plugin:regexp/recommended",
         "plugin:sonarjs/recommended",
         "plugin:switch-case/recommended",
@@ -51,6 +57,7 @@ module.exports = {
         "no-invalid-this": "off",
         "no-multiple-empty-lines": "off",
         "no-restricted-syntax": "off",
+        "no-underscore-dangle": "off",
         "no-unused-vars": ["error", {"vars": "all", "args": "none", "ignoreRestSiblings": false}],
         "object-curly-spacing": "off",
         "sort-imports": "off", // See simple-import-sort plugin
@@ -58,31 +65,21 @@ module.exports = {
         // Plugins
         //"custom-elements/extends-correct-class": "off", // Conflicts when extending other Web Components
         "filenames/match-regex": "off",
-        "flowtype/no-types-missing-file-annotation": "off",
-        "flowtype/require-parameter-type": "off",
-        "flowtype/require-valid-file-annotation": "off",
-        "flowtype/require-return-type": [
-            2,
-            "always",
-            {
-                "excludeArrowFunctions": true
-            }
-        ],
         "github/array-foreach": "off", // Already handled (better) by unicorn/no-array-for-each
         "i18n-text/no-en": "off",
         "import/extensions": ["error",
             {
                 js: "never",
+                jsx: "always",
+                json: "always",
                 png: "always"
             }
         ], // Allow imports to modules without extension
         "import/no-unresolved": "off", // This rule doesn't work with relative imports
-        "import/no-extraneous-dependencies": "off",
         "import/order": "off", // Already handled (better) by simple-import-sort/imports
         "mithril/jsx-no-target-blank": "off",
         "new-with-error/new-with-error": "error",
         "no-secrets/no-secrets":"error",
-        "no-underscore-dangle": "off",
         "prettier/prettier": "off",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
