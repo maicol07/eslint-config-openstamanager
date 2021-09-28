@@ -61,6 +61,13 @@ module.exports = {
         "flowtype/no-types-missing-file-annotation": "off",
         "flowtype/require-parameter-type": "off",
         "flowtype/require-valid-file-annotation": "off",
+        "flowtype/require-return-type": [
+            2,
+            "always",
+            {
+                "excludeArrowFunctions": true
+            }
+        ]
         "github/array-foreach": "off", // Already handled (better) by unicorn/no-array-for-each
         "i18n-text/no-en": "off",
         "import/extensions": ["error",
