@@ -24,8 +24,8 @@ module.exports = {
     extends: [
         "eslint:recommended",
         "airbnb-base",
-        "@aidera/eslint-config/base",
-        "@aidera/eslint-config/flowtype",
+        "@adeira/eslint-config/base",
+        "@adeira/eslint-config/flowtype",
         "@open-wc",
         "plugin:github/recommended",
         "plugin:mithril/recommended",
