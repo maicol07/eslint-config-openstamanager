@@ -54,7 +54,7 @@ module.exports = {
         "class-methods-use-this": "off",
         "eol-last": "off",
         "func-names": "off",
-        "lines-between-class-members": ["on", "always", {exceptAfterSingleLine: true}],
+        "lines-between-class-members": ["error", "always", {exceptAfterSingleLine: true}],
         "no-invalid-this": "off",
         "no-multiple-empty-lines": "off",
         "no-restricted-syntax": "off",
