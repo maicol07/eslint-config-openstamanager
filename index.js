@@ -57,6 +57,7 @@ module.exports = {
         "lines-between-class-members": ["error", "always", {exceptAfterSingleLine: true}],
         "no-invalid-this": "off",
         "no-multiple-empty-lines": "off",
+        "no-param-reassign": ["error", {props: false}],
         "no-restricted-syntax": "off",
         "no-underscore-dangle": "off",
         "no-unused-vars": ["error", {"vars": "all", "args": "none", "ignoreRestSiblings": false}],
