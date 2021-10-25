@@ -76,7 +76,9 @@ module.exports = {
                 js: "never",
                 jsx: "always",
                 json: "always",
-                png: "always"
+                png: "always",
+                css: "always",
+                scss: "always"
             }
         ], // Allow imports to modules without extension
         "import/no-unresolved": "off", // This rule doesn't work with relative imports
