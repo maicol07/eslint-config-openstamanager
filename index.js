@@ -62,8 +62,8 @@ module.exports = {
 
     // Plugins
     //"custom-elements/extends-correct-class": "off", // Conflicts when extending other Web Components
-    "flowtype/no-types-missing-file-annotation": "off",
-    "flowtype/require-valid-file-annotation": "off",
+    "ft-flow/no-types-missing-file-annotation": "off",
+    "ft-flow/require-valid-file-annotation": "off",
     "filenames/match-regex": "off",
     "i18n-text/no-en": "off",
     "import/extensions": ["error",
@@ -80,7 +80,6 @@ module.exports = {
     "import/order": "off", // Already handled (better) by simple-import-sort/imports
     "mithril/jsx-no-target-blank": "off",
     "new-with-error/new-with-error": "error",
-    "no-secrets/no-secrets": "error",
     "prettier/prettier": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
