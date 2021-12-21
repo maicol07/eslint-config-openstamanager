@@ -1,11 +1,11 @@
+/** @type {import('@types/eslint').Linter.Config} */
 module.exports = {
     env: {
         browser: true,
         es6: true,
         es2017: true,
         es2020: true,
-        es2021: true,
-        jquery: true
+        es2021: true
     },
     parser: '@babel/eslint-parser', // TODO: consider moving this into `eslint-config-adeira`
     parserOptions: {
@@ -17,26 +17,23 @@ module.exports = {
     },
     plugins: [
         "new-with-error",
-        "no-secrets",
-        "simple-import-sort",
-        "switch-case"
+        "simple-import-sort"
     ],
     extends: [
-        "eslint:recommended",
-        "airbnb-base",
         "@adeira/eslint-config/base",
         "@adeira/eslint-config/flowtype",
-        "@open-wc",
+        "plugin:wc/recommended",
+        "plugin:lit/recommended",
         "plugin:github/recommended",
         "plugin:mithril/recommended",
         "plugin:regexp/recommended",
         "plugin:sonarjs/recommended",
-        "plugin:switch-case/recommended",
         "plugin:unicorn/recommended",
         "plugin:you-dont-need-lodash-underscore/compatible"
     ],
     globals: {
-        m: "readonly"
+        m: "readonly",
+        $: true
     },
     rules: {
         "capitalized-comments": [
