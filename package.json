@@ -9,6 +9,7 @@
   "repository": "github:maicol07/eslint-config",
   "version": "1.1.1",
   "main": "index.js",
+  "files": ["index.js"],
   "devDependencies": {
     "@types/eslint": "^7.29.0"
   },
