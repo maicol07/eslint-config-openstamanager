@@ -7,28 +7,27 @@ module.exports = {
     es2020: true,
     es2021: true
   },
-  parser: '@babel/eslint-parser', // TODO: consider moving this into `eslint-config-adeira`
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2021,
-    ecmaFeatures: {
-      jsx: true,
-    },
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
   },
   plugins: [
+    "@typescript-eslint"
     "new-with-error",
     "simple-import-sort"
   ],
   extends: [
     "@adeira/eslint-config/base",
-    "@adeira/eslint-config/flowtype",
     "plugin:wc/recommended",
     "plugin:lit/recommended",
     "plugin:mithril/recommended",
     "plugin:regexp/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
-    "plugin:you-dont-need-lodash-underscore/compatible"
+    "plugin:you-dont-need-lodash-underscore/compatible",
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],
   globals: {
     m: "readonly",
@@ -69,7 +68,9 @@ module.exports = {
     "import/extensions": ["error",
       {
         js: "never",
-        jsx: "always",
+        ts: "never",
+        jsx: "never",
+        tsx: "never"
         json: "always",
         png: "always",
         css: "always",
