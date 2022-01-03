@@ -85,6 +85,7 @@ module.exports = {
     "import/no-unresolved": "off", // This rule doesn't work with relative imports
     "import/order": "off", // Already handled (better) by simple-import-sort/imports
     "mithril/jsx-no-target-blank": "off",
+    "n/file-extension-in-import": "off",
     "new-with-error/new-with-error": "error",
     "prettier/prettier": "off",
     "simple-import-sort/imports": "error",
