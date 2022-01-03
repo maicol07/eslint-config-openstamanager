@@ -68,7 +68,7 @@ module.exports = {
         js: "never",
         ts: "never",
         jsx: "never",
-        tsx: "never"
+        tsx: "never",
         json: "always",
         png: "always",
         css: "always",
