@@ -13,7 +13,7 @@ module.exports = {
     project: ['./tsconfig.json'],
   },
   plugins: [
-    "@typescript-eslint"
+    "@typescript-eslint",
     "new-with-error",
     "simple-import-sort"
   ],
