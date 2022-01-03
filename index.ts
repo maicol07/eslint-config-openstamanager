@@ -1,4 +1,14 @@
-/** @type {import('@types/eslint').Linter.Config} */
+import type {ParserOptions} from "@typescript-eslint/parser";
+
+const parserOptions: ParserOptions = {
+  ecmaFeatures: {
+    jsx: true,
+  },
+  ecmaVersion: 'latest',
+  project: ['./tsconfig.json'],
+  lib: ['esnext']
+};
+
 module.exports = {
   env: {
     browser: true,
@@ -8,10 +18,7 @@ module.exports = {
     es2021: true
   },
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-  },
+  parserOptions: parserOptions,
   plugins: [
     "@typescript-eslint",
     "new-with-error",
