@@ -61,8 +61,6 @@ module.exports = {
 
     // Plugins
     //"custom-elements/extends-correct-class": "off", // Conflicts when extending other Web Components
-    "ft-flow/no-types-missing-file-annotation": "off",
-    "ft-flow/require-valid-file-annotation": "off",
     "filenames/match-regex": "off",
     "i18n-text/no-en": "off",
     "import/extensions": ["error",
