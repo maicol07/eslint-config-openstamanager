@@ -54,18 +54,22 @@ module.exports = {
     'class-methods-use-this': 'off',
     'eol-last': 'off',
     'func-names': 'off',
-    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    'lines-between-class-members': 'off',
     'no-invalid-this': 'off',
     'no-multiple-empty-lines': 'off',
     'no-param-reassign': ['error', { props: false }],
     'no-restricted-syntax': 'off',
     'no-underscore-dangle': 'off',
-    'no-unused-vars': ['error', { vars: 'all', args: 'none', ignoreRestSiblings: false }],
+    'no-unused-vars': 'off',
     'object-curly-spacing': 'off',
     'sort-imports': 'off', // See simple-import-sort plugin
 
     // Plugins
     '@typescript-eslint/comma-dangle': ['error', 'never'],
+    '@typescript-eslint/object-curly-spacing': ['error', 'never'],
+    '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    '@typescript-eslint/no-invalid-this': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'none', ignoreRestSiblings: false }],
     // "custom-elements/extends-correct-class": "off",
     // Conflicts when extending other Web Components
     'filenames/match-regex': 'off',
