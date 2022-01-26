@@ -1,16 +1,7 @@
-/* eslint-disable unicorn/prefer-module, import/no-import-module-exports */
-import type { ParserOptions } from '@typescript-eslint/parser';
+import {Linter} from 'eslint';
+import Config = Linter.Config;
 
-const parserOptions: ParserOptions = {
-  ecmaFeatures: {
-    jsx: true
-  },
-  ecmaVersion: 'latest',
-  project: ['./tsconfig.json'],
-  lib: ['esnext']
-};
-
-module.exports = {
+const config: Config = {
   env: {
     browser: true,
     es6: true,
@@ -19,7 +10,14 @@ module.exports = {
     es2021: true
   },
   parser: '@typescript-eslint/parser',
-  parserOptions,
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    },
+    ecmaVersion: 'latest',
+    project: ['./tsconfig.json'],
+    lib: ['esnext']
+  },
   plugins: [
     '@typescript-eslint',
     'new-with-error',
@@ -55,9 +53,10 @@ module.exports = {
     'eol-last': 'off',
     'func-names': 'off',
     'lines-between-class-members': 'off',
+    'new-cap': ['error', {properties: false}],
     'no-invalid-this': 'off',
     'no-multiple-empty-lines': 'off',
-    'no-param-reassign': ['error', { props: false }],
+    'no-param-reassign': ['error', {props: false}],
     'no-restricted-syntax': 'off',
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'off',
@@ -67,16 +66,16 @@ module.exports = {
     // Plugins
     '@typescript-eslint/comma-dangle': ['error', 'never'],
     '@typescript-eslint/object-curly-spacing': ['error', 'never'],
-    '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    '@typescript-eslint/lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
     '@typescript-eslint/no-invalid-this': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'none', ignoreRestSiblings: false }],
+    '@typescript-eslint/no-unused-vars': ['error', {vars: 'all', args: 'none', ignoreRestSiblings: false}],
     // "custom-elements/extends-correct-class": "off",
     // Conflicts when extending other Web Components
     'filenames/match-regex': 'off',
     'i18n-text/no-en': 'off',
     'import/extensions': ['error',
       {
-        js: 'never',
+        js: 'always',
         ts: 'never',
         jsx: 'never',
         tsx: 'never',
@@ -98,3 +97,5 @@ module.exports = {
     'unicorn/filename-case': 'off'
   }
 };
+
+export default config;
