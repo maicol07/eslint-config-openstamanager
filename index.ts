@@ -60,6 +60,7 @@ const config: Config = {
     'no-restricted-syntax': 'off',
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'off',
+    'no-void': ['error', {allowAsStatement: true}],
     'object-curly-spacing': 'off',
     'sort-imports': 'off', // See simple-import-sort plugin
 
