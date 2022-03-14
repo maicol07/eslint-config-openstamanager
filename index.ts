@@ -88,6 +88,7 @@ const config: Config = {
     ], // Allow imports to modules without extension
     'import/no-unresolved': 'off', // This rule doesn't work with relative imports
     'import/order': 'off', // Already handled (better) by simple-import-sort/imports
+    'import/prefer-default-export': 'off',
     'mithril/jsx-no-target-blank': 'off',
     'mithril/jsx-uses-mithril': 'off', // Will be declared as a global variable
     'n/file-extension-in-import': 'off',
