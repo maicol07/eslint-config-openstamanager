@@ -76,7 +76,7 @@ const config: Config = {
     'i18n-text/no-en': 'off',
     'import/extensions': ['error',
       {
-        js: 'always',
+        js: 'ignorePackages', // Temporary fix for Lit (see https://github.com/import-js/eslint-plugin-import/issues/2141)
         ts: 'never',
         jsx: 'never',
         tsx: 'never',
