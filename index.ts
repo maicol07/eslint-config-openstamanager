@@ -21,7 +21,8 @@ const config: Config = {
   plugins: [
     '@typescript-eslint',
     'new-with-error',
-    'simple-import-sort'
+    'simple-import-sort',
+    'only-warn'
   ],
   extends: [
     'airbnb-base',
