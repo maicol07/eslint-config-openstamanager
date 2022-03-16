@@ -36,10 +36,6 @@ const config: Config = {
     'plugin:you-dont-need-lodash-underscore/compatible',
     'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],
-  globals: {
-    m: 'readonly',
-    $: true
-  },
   rules: {
     'capitalized-comments': [
       'error',
