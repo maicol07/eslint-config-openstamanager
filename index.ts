@@ -83,6 +83,7 @@ const config: Config = {
         scss: 'always'
       }
     ], // Allow imports to modules without extension
+    'import/no-cycle': 'off',
     'import/no-unresolved': 'off', // This rule doesn't work with relative imports
     'import/order': 'off', // Already handled (better) by simple-import-sort/imports
     'import/prefer-default-export': 'off',
