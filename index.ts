@@ -71,6 +71,7 @@ const config: Config = {
     // Conflicts when extending other Web Components
     'filenames/match-regex': 'off',
     'i18n-text/no-en': 'off',
+    // Allow imports to modules without extension
     'import/extensions': ['error',
       {
         js: 'ignorePackages', // Temporary fix for Lit (see https://github.com/import-js/eslint-plugin-import/issues/2141)
@@ -82,7 +83,7 @@ const config: Config = {
         css: 'always',
         scss: 'always'
       }
-    ], // Allow imports to modules without extension
+    ],
     'import/no-cycle': 'off',
     'import/no-unresolved': 'off', // This rule doesn't work with relative imports
     'import/order': 'off', // Already handled (better) by simple-import-sort/imports
