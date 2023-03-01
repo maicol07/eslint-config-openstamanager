@@ -84,6 +84,7 @@ const config: Config = {
         scss: 'always'
       }
     ],
+    'import/no-extraneous-dependencies': 'off', // Dependencies are not found when installed with PNPM
     'import/no-unresolved': 'off', // This rule doesn't work with relative imports
     'import/order': 'off', // Already handled (better) by simple-import-sort/imports
     'import/prefer-default-export': 'error',
