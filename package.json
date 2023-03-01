@@ -9,15 +9,15 @@
   "repository": "github:maicol07/eslint-config",
   "version": "2.2.2",
   "main": "index.js",
+  "packageManager": "pnpm@7.27.1",
   "files": [
     "index.js"
   ],
   "scripts": {
-    "prepublishOnly": "eslint --max-warnings=0 index.ts && tsc"
+    "build": "tsc",
+    "prepublishOnly": "eslint --max-warnings=0 index.ts && pnpm build"
   },
-  "devDependencies": {
-    "@types/eslint": "^7.29.0",
-    "@types/node": "^17.0.7",
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": ">=5.9.0",
     "@typescript-eslint/parser": ">=5.9.0",
     "eslint": ">=8.5.0",
@@ -33,26 +33,14 @@
     "eslint-plugin-sonarjs": ">=0.10.0",
     "eslint-plugin-unicorn": ">=35.0.0",
     "eslint-plugin-wc": ">=1.3.2",
-    "eslint-plugin-you-dont-need-lodash-underscore": ">=6.12.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": ">=6.12.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.21.1",
+    "@types/node": "^18.14.2",
     "typescript": ">=4.5.4"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.9.0",
-    "@typescript-eslint/parser": ">=5.9.0",
-    "eslint": ">=8.5.0",
-    "eslint-config-airbnb-base": ">=15.0.0",
-    "eslint-config-airbnb-typescript": ">=16.1.0",
-    "eslint-plugin-import": ">=2.25.4",
-    "eslint-plugin-lit": ">=1.6.1",
-    "eslint-plugin-mithril": ">=0.2.0",
-    "eslint-plugin-new-with-error": ">=2.0.0",
-    "eslint-plugin-only-warn": ">=1.0.3",
-    "eslint-plugin-regexp": ">=1.1.0",
-    "eslint-plugin-simple-import-sort": ">=7.0.0",
-    "eslint-plugin-sonarjs": ">=0.10.0",
-    "eslint-plugin-unicorn": ">=35.0.0",
-    "eslint-plugin-wc": ">=1.3.2",
-    "eslint-plugin-you-dont-need-lodash-underscore": ">=6.12.0",
     "typescript": ">=4.5.4"
   }
 }
