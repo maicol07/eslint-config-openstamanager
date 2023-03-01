@@ -50,7 +50,7 @@ const config: Config = {
     'eol-last': 'off',
     'func-names': 'off',
     'lines-between-class-members': 'off',
-    'new-cap': ['error', {properties: false}],
+    'new-cap': ['error', {capIsNewExceptions: ['Stream']}],
     'no-invalid-this': 'off',
     'no-multiple-empty-lines': 'off',
     'no-param-reassign': ['error', {props: false}],
@@ -84,10 +84,9 @@ const config: Config = {
         scss: 'always'
       }
     ],
-    'import/no-cycle': 'off',
     'import/no-unresolved': 'off', // This rule doesn't work with relative imports
     'import/order': 'off', // Already handled (better) by simple-import-sort/imports
-    'import/prefer-default-export': 'off',
+    'import/prefer-default-export': 'error',
     'mithril/jsx-no-target-blank': 'off',
     'mithril/jsx-uses-mithril': 'off', // Will be declared as a global variable
     'n/file-extension-in-import': 'off',
