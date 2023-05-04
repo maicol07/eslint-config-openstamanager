@@ -59,6 +59,7 @@ const config: Config = {
     'no-unused-vars': 'off',
     'no-void': ['error', {allowAsStatement: true}],
     'object-curly-spacing': 'off',
+    'prefer-const': ['error', {destructuring: 'all'}],
     'sort-imports': 'off', // See simple-import-sort plugin
 
     // Plugins
