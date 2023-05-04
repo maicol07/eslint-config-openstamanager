@@ -50,7 +50,7 @@ const config: Config = {
     'eol-last': 'off',
     'func-names': 'off',
     'lines-between-class-members': 'off',
-    'new-cap': ['error', {capIsNewExceptions: ['Stream']}],
+    'new-cap': ['error', {capIsNewExceptions: ['Stream'], properties: false}],
     'no-invalid-this': 'off',
     'no-multiple-empty-lines': 'off',
     'no-param-reassign': ['error', {props: false}],
