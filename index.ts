@@ -79,10 +79,66 @@ const config: Config = {
         ts: 'never',
         jsx: 'never',
         tsx: 'never',
-        json: 'always',
+
+        // Require extension for common assets (based on https://github.com/vitejs/vite/blob/main/packages/vite/src/node/constants.ts)
+
+        // Images
+        apng: 'always',
         png: 'always',
+        jpg: 'always',
+        jpeg: 'always',
+        pjpeg: 'always',
+        pjp: 'always',
+        gif: 'always',
+        svg: 'always',
+        ico: 'always',
+        webp: 'always',
+        bmp: 'always',
+        tiff: 'always',
+        avif: 'always',
+        raw: 'always',
+
+        // Media
+        mp4: 'always',
+        webm: 'always',
+        ogg: 'always',
+        mp3: 'always',
+        wav: 'always',
+        flac: 'always',
+        aac: 'always',
+        oga: 'always',
+        m4a: 'always',
+        amr: 'always',
+        wma: 'always',
+        aiff: 'always',
+        caf: 'always',
+        ac3: 'always',
+        opus: 'always',
+        mkv: 'always',
+        mov: 'always',
+        avi: 'always',
+
+        // Fonts
+        woff: 'always',
+        woff2: 'always',
+        eot: 'always',
+        ttf: 'always',
+        otf: 'always',
+
+        // Stylesheets
         css: 'always',
-        scss: 'always'
+        scss: 'always',
+
+        // Other
+        json: 'always',
+        yaml: 'always',
+        toml: 'always',
+        webmanifest: 'always',
+        xml: 'always',
+        md: 'always',
+        txt: 'always',
+        csv: 'always',
+        pdf: 'always'
       }
     ],
     'import/no-extraneous-dependencies': 'off', // Dependencies are not found when installed with PNPM
