@@ -79,6 +79,7 @@ const config: Config = {
         ts: 'never',
         jsx: 'never',
         tsx: 'never',
+        vue: 'always',
 
         // Require extension for common assets (based on https://github.com/vitejs/vite/blob/main/packages/vite/src/node/constants.ts)
 
